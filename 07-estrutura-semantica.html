@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descrição" content=" Site sobre a estrutura semântica do HTML ">
+
+    <title> Sobre estrutura semântica | HTML </title>
+
+    <style>
+         body {
+             background-color: #efeeee;
+             font-family: sans-serif;
+             color: #000000; 
+             
+        }
+
+        header {
+            background-color: #faf5f5; 
+        }
+
+        section {
+            border: 1px solid #c8e849fb;
+            background-color: hsl(0, 0%, 100%);
+            padding: 4px ; 
+        }
+
+        footer {
+            background-color: #c1def3;
+        }
+    </style>
+</head>
+
+<body>
+    <header> <!-- header- representa o cabeçalho de uma página ou de uma seção. -->
+        <h1> Logo </h1>
+        <nav> <!-- nav/navigation = representa uma área de navegação -->
+
+            <!-- agrupamos os itens de navegação dentro de uma lista por conta de acessibilidade. -->
+            <ul>
+                <li><a href="">Tópico 1</a></li>
+                <li><a href="">Tópico 2</a></li>
+                <li><a href="">Tópico 3</a></li>
+            </ul>
+        
+            <!-- <a href="/">Home</a> 
+            <a href="sobre.html">sobre</a>
+            <a href="contato.htm">Contato</a> -->
+        </nav>
+    </header>
+
+    <!-- main/principal = representa o conteúdo principal da página. Uma página deve ter UM CONTEÚDO PRINCIPAL. -->
+    <main>
+
+        <section> <!-- <section/seção - representa uma SEÇÃO TEMÁTICA DE CONTEÚDO. </section> -->
+           <h2> Projetos </h2>
+           <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio impedit odit, id quo placeat, iusto, fugit omnis explicabo ullam minus veritatis similique magnam at. Distinctio autem dignissimos consequuntur dolore voluptatem?</p>
+        </section>
+
+        <section> 
+           <h2> Contato </h2>
+           <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio impedit odit, id quo placeat, iusto, fugit omnis explicabo ullam minus veritatis similique magnam at. Distinctio autem dignissimos consequuntur dolore voluptatem?</p>
+
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis magnam voluptas, cumque alias adipisci ullam magni laborum, rerum deleniti neque non. Perferendis dolores porro doloribus eius, consectetur doloremque laudantium laborum.</p>
+        </section>
+
+        <section>
+           <h2> Últimos artigos </h2>
+
+           <article>
+              <h3> Aprendendo HTML </h3>
+              <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In et voluptate labore ducimus dignissimos quibusdam facilis accusamus nostrum, qui alias nemo laborum vitae quisquam cupiditate nulla dolores. Ratione, praesentium doloribus?</P>
+           </article>
+
+           <article>
+              <h3> Aprendendo CSS </h3>
+              <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In et voluptate labore ducimus dignissimos quibusdam facilis accusamus nostrum, qui alias nemo laborum vitae quisquam cupiditate nulla dolores. Ratione, praesentium doloribus?</P>
+           </article>
+
+           <article>
+              <h3> Aprendendo JS </h3>
+              <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In et voluptate labore ducimus dignissimos quibusdam facilis accusamus nostrum, qui alias nemo laborum vitae quisquam cupiditate nulla dolores. Ratione, praesentium doloribus?</P>
+           </article>
+        </section>
+
+
+        <aside>  <!--aside - representa conteúdo relacionado, mas não essencial ao conteúdo principal -->
+            <h2> Artigos relacionados </h2>
+            <nav>
+                <ul>
+                  <li><a href="aprenda-java.html">Aprenda Java</a></li>
+                  <li><a href="domine-react.html">Domine React</a></li>
+                  <li><a href="explore-ux-ui.html">Explore UX e UI</a></li>
+                </ul>
+            </nav>
+
+
+            <article>
+                <header>
+                    <h3> Meu artigo </h3>
+                </header>
+
+                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt ut veniam aut voluptas repellat veritatis nihil 
+                    ex recusandae perspiciatis. Culpa molestiae nemo maiores asperiores quasi eius! Quis nobis amet odio. </p>
+
+                <footer>
+                    <p> Publicado por JP </p>
+                </footer>
+            </article>
+        </aside>
+    </main>
+
+    <!-- footer - representa o rodapé de umaPÁGINA OU SEÇÃO -->
+    <footer>
+        <p>&copy; 2026 - Mago da Silva </p>
+        <address>
+            <a href="mailto:mago@dasilva.com"> Email: mago@dasilva.com</a>
+            <a href="tel:55119876543219">tel:(11) 9 876543219</a>
+            <p> Rua Ali, Número 19 - São Paulo - SP </p>
+        </address>
+
+        <nav>
+            <ul>
+                <li> <a href="/"> Página Inicial </a> </li>
+                <li> <a href="/"> Página de carreiras </a> </li>
+                <li> <a href="/"> Sobre a empresa </a> </li>
+                <li> <a href="/"> Termos e privacidade </a> </li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

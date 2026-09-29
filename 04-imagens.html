@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre imagens | HTML</title>
+</head>
+
+<body>
+    <h1>Trabalhando com imagens</h1>
+    <hr>
+    
+    <p>Trabalhando com o elemento de &lt;img&gt;</p>
+    <img src="Foto-flor-rosa.jpg" alt="Borboleta preta sobre flores cor de rosa." width="200">
+
+    <p>Entendendo os atributos: </p>
+    <ul>
+        <li> <strong> src </strong>: Source/fonte: É o caminho onde a imagem está hospedada/armazenada. Pode ser um caminho local ou um link direto da internet. </li>
+
+        <li> <strong> alt </strong>: alt/alternative. É uma breve descrição da imagem. É crucial para <strong>Acessibilidade</strong> e como fallback (Plano B).</li>
+    </ul>
+
+    <h2> Trabalhando com recursos externos </h2>
+    <p> Configurando imagens externas </p>
+
+    <img 
+        src="https://unsplash.com/pt-br/fotografias/borboleta-preta-sobre-flores-cor-de-rosa-fJwhqy5guwM" 
+        
+        alt="Borboleta preta sobre flores cor de rosa." 
+        
+        height="500"
+    >
+    
+        <h2> Outras abordsgens </h2>
+        <h3> Elemento figure </h3>
+        <figure>
+            <img src="Foto-flor-rosa.jpg" alt="Borboleta preta sobre flores cor de rosa." width="200" height="250">
+            
+            <figcaption> Flores em um Jardim - Foto: Murilo Silva </figcaption>
+        </figure> 
+
+
+        <h3> Elemento picture </h3>
+        <p> Utilizamos o elemento &lt; picture &gt; serve para controlarmos qual arquivo será utilizado de acordo com determinadas condições. </p>
+
+        <picture> 
+            <source media="(max-width: 250px)" srcset="https://unsplash.com/pt-br/fotografias/borboleta-preta-sobre-flores-cor-de-rosa-fJwhqy5guwM">
+
+            
+            <source media="(251px)" srcset="Foto-flor-rosa">
+
+            <!-- img como fall1back(Plano B) - Caso não seja possível utilizar alguma imagem configurada no source acima,o navegador entrega a imagem do img. -->
+            <img src="Foto-flor-rosa.jpg" alt="Borboleta preta sobre flores cor de rosa." width="200">
+        </picture>
+
+        <hr>
+        <h2> Sobre os tipos de imagens </h2>
+        <p> Você pode encontrar um acervo muito grande de tipos de imagens. A escolha da imagem certa pode elevar a performace do seu site. Veja a lista abaixo:</p>
+        <ul>
+            <li> <strong> JPEG/JPG </strong>: Bom para fotografias, produtos fotografados, imagens com muitas cores e detalhes. Se você tentar otimizar demais, a perda de qualidade se torna visível. </li>
+
+            <li> <strong> PNG </strong>: Suporta transparência e é muito bom para imagens que precisam preservar certos detalhes, como por exemplo: logos,imagens que precisam de transparência e etc. </li>
+
+            <li> <strong> WEBP </strong>: Formato recente desenvolvido com foco na web. Além de também suportar transparência, também consegue trabalhar com imagens em alta definição. Excelente escolha para fotografias, imagens de produtos, imagens com transparência e imagens gerais.</li>
+
+            <li> <strong> AVIF </strong>: É um formato mais recente e também muito eficiente. É excelente, para fotografias,imagens granades, sites onde desempenho e economia de dados são extremamente importantes. </li>
+
+            <li> <strong> SVG </strong>: É um elemento vetorial, excelente para logos, ícones, símbolos e etc.</li>
+        </ul>
+
+
+</body>
+
+</html>
